@@ -2,11 +2,11 @@
 Basic maze project with undefined scope
 
 What it does :
-  -generate a 10x15 maze with hexagonal cells
-  -basic interaction with the cells. 
-    -MouseHover, the cell turns grey
-    -MouseClick, the cells turn light grey
-    -MouseExit, the cell turn dark grey
+  - Generate a 10x15 maze with hexagonal cells
+  - Basic interaction with the cells. 
+    - MouseHover, the cell turns grey
+    - MouseClick, the cells turn light grey
+    - MouseExit, the cell turn dark grey
     
  Plan and ideas for future improvement
   - Add a regenerate feature
