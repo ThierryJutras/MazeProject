@@ -20,7 +20,7 @@ import static java.lang.Math.PI;
 public class HexagonView extends JPanel implements MouseListener {
     private final HashMap<Orientation, Boolean> walls = new HashMap<>(6);
     private final Point[] hexApex = new Point[6];
-    private Color cellColor = Color.DARK_GRAY;
+    private Color cellColor = Color.CYAN;
 
     public HexagonView(Leaf model) {
         setOpaque(false);
@@ -120,23 +120,23 @@ public class HexagonView extends JPanel implements MouseListener {
     }
 
 
-        @Override
-        public void mouseClicked(MouseEvent e) {
-            cellColor = Color.LIGHT_GRAY;
-            repaint();
-        }
-
-        @Override
-        public void mouseEntered(MouseEvent e) {
-            cellColor = Color.gray;
+    @Override
+    public void mouseClicked(MouseEvent e) {
+        cellColor = Color.LIGHT_GRAY;
         repaint();
     }
 
-        @Override
-        public void mouseExited(MouseEvent e) {
-            cellColor = Color.DARK_GRAY;
-            repaint();
-        }
+    @Override
+    public void mouseEntered(MouseEvent e) {
+        cellColor = Color.gray;
+    repaint();
+    }
+
+    @Override
+    public void mouseExited(MouseEvent e) {
+        cellColor = Color.CYAN;
+        repaint();
+    }
 
     @Override
     public void mousePressed(MouseEvent e) {
